@@ -1,0 +1,303 @@
+/* ---------- Reset básico ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #41598a 0%, #f5f7fb 50%, #dfe6f5 100%);
+}
+
+/* ---------- Capa (primeira página) ---------- */
+.capa {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulo {
+    font-size: 5rem;
+    color: #0c0c53;
+    font-weight: 900;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: aparecer 1.8s ease-out forwards;
+}
+
+.subtitulo {
+    max-width: 700px;
+    margin-top: 25px;
+    color: #2b3a67;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0;
+    animation: aparecer 1.8s ease-out 0.6s forwards;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.badge {
+    margin-top: 40px;
+    background-color: #3133a0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 12px 45px;
+    border-radius: 25px;
+    opacity: 0;
+    animation: aparecer 1.5s ease-out 0.10s forwards;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.badge:hover {
+    cursor: pointer;
+}
+
+.rodape {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.90rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* ----- Animação de subida ----- */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----- Snow ------ */
+.snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snow span {
+    position: absolute;
+    top: -10%;
+    color: #6a98c9;
+    font-size: 1.5rem;
+    animation: cair infinite;
+}
+
+/* ----- Posicionar os flocos ----- */
+
+.snow span:nth-child(1) {
+    left: 5%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 1.15s;
+}
+
+.snow span:nth-child(2) {
+    left: 3%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+.snow span:nth-child(3) {
+    left: 25%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.snow span:nth-child(4) {
+    left: 39%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.50s;
+}
+
+.snow span:nth-child(5) {
+    left: 65%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 3.5s;
+}
+
+.snow span:nth-child(6) {
+    left: 75%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+.snow span:nth-child(7) {
+    left: 85%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.70s;
+}
+
+.snow span:nth-child(8) {
+    left: 95%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.94s;
+}
+
+.snow span:nth-child(9) {
+    left: 71%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.60s;
+}
+
+.snow span:nth-child(10) {
+    left: 56%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.90s;
+}
+
+.snow span:nth-child(11) {
+    left: 38%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 1.20s;
+}
+
+.snow span:nth-child(12) {
+    left: 22%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 2.3s;
+}
+
+.snow span:nth-child(13) {
+    left: 68%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 1.40s;
+}
+
+.snow span:nth-child(14) {
+    left: 73%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 1.10s;
+}
+
+.snow span:nth-child(14) {
+    left: 59%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.snow span:nth-child(15) {
+    left: 97%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 6s;
+}
+
+.snow span:nth-child(16) {
+    left: 93%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.snow span:nth-child(17) {
+    left: 51%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 2.10s;
+}
+
+.snow span:nth-child(18) {
+    left: 43%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
+
+.snow span:nth-child(19) {
+    left: 62%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 8s;
+}
+
+.snow span:nth-child(20) {
+    left: 49%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 1.05s;
+}
+
+.snow span:nth-child(21) {
+    left: 11%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.85s;
+}
+
+.snow span:nth-child(22) {
+    left: 15%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.70s;
+}
+
+.snow span:nth-child(23) {
+    left: 46%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.45s;
+}
+
+.snow span:nth-child(24) {
+    left: 30%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 2.20s;
+}
+
+.snow span:nth-child(25) {
+    left: 33%;
+    font-size: 1.2rem;
+    animation-duration: 10s;
+    animation-delay: 0.25s;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 30;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 30;
+    }
+}
